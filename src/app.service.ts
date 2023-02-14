@@ -2,11 +2,6 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { PhotoDB } from './entities/photo-entity';
-import { FileInterceptor } from '@nestjs/platform-express';
-import { response } from 'express';
-import {UploadedFile, UseInterceptors } from '@nestjs/common';
-const cloudinary = require('cloudinary').v2;
-
 @Injectable()
 export class AppService {
   constructor(
