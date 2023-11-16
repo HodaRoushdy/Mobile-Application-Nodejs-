@@ -7,5 +7,4 @@ export class PhotoDB {
 
   @Column()
   url: string;
-
 }
